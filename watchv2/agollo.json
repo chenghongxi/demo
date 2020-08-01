@@ -1,0 +1,8 @@
+{
+  "appId": "xy_watchV2",
+  "cluster" : "default",
+  "namespaceNames" : ["xy_watchV2.yaml"],
+  "ip" : "10.68.0.122:8080",
+  "oneNameSpaceMode" : true,
+  "tagname" : "yaml"
+}
