@@ -9,4 +9,10 @@ node {
     stage('拉取代码') {
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: "${git_auth}", url: "${git_url}"]]])
     }
+    stage('push') {
+        sh "cd ${project_name}"
+        sh "pwd"
+        sh "chmod +x push.sh"
+        echo "权限赋予成功"
+    }
 }
